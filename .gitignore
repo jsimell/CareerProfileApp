@@ -1,3 +1,4 @@
+# Python / Backend
 .venv/
 __pycache__/
 .pytest_cache/
@@ -5,3 +6,10 @@ __pycache__/
 .env.*
 !.env.example
 *.pyc
+
+# Node.js / Frontend
+node_modules/
+dist/
+
+# VS Code
+.vscode/
