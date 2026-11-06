@@ -1,16 +1,9 @@
 from fastapi import FastAPI
 
 from app.routers import (
-    degrees,
-    hobbies,
-    languages,
-    profiles,
-    project_skills,
-    projects,
-    skills,
-    users,
     work_experiences,
 )
+from app.routers import degrees, hobbies, languages, profiles, project_skills, projects, skills, users
 
 app = FastAPI()
 
