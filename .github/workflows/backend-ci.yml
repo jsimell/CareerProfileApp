@@ -40,8 +40,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
-          python -m pip install -r requirements.txt
+            python -m pip install --upgrade pip
+            python -m pip install -r backend/requirements.txt
 
       - name: Install PostgreSQL client
         run: |
@@ -57,7 +57,8 @@ jobs:
           --username postgres
           --dbname career_profiles_test
           --set ON_ERROR_STOP=1
-          --file database/schema.sql
+          --file backend/database/schema.sql
 
       - name: Run pytest
+        working-directory: backend
         run: python -m pytest -q
